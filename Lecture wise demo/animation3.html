@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation rotated</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            animation-name: AR;
+            animation-duration: 10s;
+            position: relative;
+            font-size: 20px;
+            text-align:center;
+            padding: 10px;
+            margin:auto;
+            
+        }
+        @keyframes AR{
+            0% {background-color: aquamarine; left: 0px; top: 0px;}
+            25% {background-color: black; left: 200px; top: 0px;}
+            50% {background-color:darkgreen; left: 200px; top: 200px;}
+            75% {background-color: chartreuse; left: 0px; top:200px}
+            100% {background-color: brown; left: 0px; top: 0px;}
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Animation rotated</h1>
+    <div>Animation</div>
+</body>
+</html>

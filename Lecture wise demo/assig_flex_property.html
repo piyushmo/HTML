@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assingment flex properties</title>
+
+    <style>
+        .flex-container{
+            background-color: rgb(165, 169, 169);
+            width: 1000px;
+            height: 680px;
+
+        }
+        img{
+            align-items: center;
+            padding: 5px;
+            width: 990px;
+            height: 100px;
+        }
+        .img2{
+            width: 487px;
+        }
+        .img3{
+            height: 100px;
+            width: 350px;
+            padding:15px;
+        }
+        .flex-container2{
+            display: flex;
+          background-color: rgb(239, 160, 160);
+          flex-direction: rows;
+          padding: 5px;
+          margin: 5px;
+
+        }
+        .flex-container2 >div{
+        background-color: antiquewhite;
+        padding: 15px;
+        margin: 15px;
+        width: 250px;
+        height: 70px;
+        flex-direction: row;
+        font-size: 50px;
+        text-align: center;
+        }
+        .flex-container3{
+            display: flex;
+            background-color: azure;
+            padding: 5px;
+            margin: 15px;
+            block-size: 130px;
+        }
+        .flex-container3 >div{
+            background-color: cadetblue;
+            flex-direction: row;
+            padding: 50px;
+            margin: 10px;
+            width: 125px;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        .flex-container4{
+            display: flex;
+            background-color: blanchedalmond;
+            block-size: 130px;
+            margin: 15px;
+        }
+        .flex-container4 >div{
+            flex-direction: row;
+            background-color: rgb(65, 241, 159);
+            padding: 50px;
+            margin: 10px;
+            width: 125px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+       
+        <div>
+        <img src="images/flowers-276014__340.jpg" alt="">
+       </div>
+       
+       <div>
+        <img class="img2" src="images/letter-p.jpg.jpg" alt="" width="450px" height="100px">
+        <img class="img2" src="images/flowers-276014__340.jpg" alt="">
+       </div>
+       
+       <div class="flex-container2" >
+        <img class="img3" src="images/flowers-276014__340.jpg" alt="">
+        <div class="d1">div1</div>
+        <div class="d1" >div2</div>
+        </div>
+
+        <div class="flex-container3">
+            <div>D1</div>
+            <div>D2</div>
+            <div>D3</div>
+            <div>D4</div>
+        </div>
+
+        <div class="flex-container4">
+            <div>D1</div>
+            <div>D2</div>
+            <div>D3</div>
+            <div>D4</div>
+            <div>D5</div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            padding: 55px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <label for="first name">first name</label>
+            <input type="text" id="fname"><br><br>
+            <label for="last name">last name</label>
+            <input type="text" id="lname" onchange="addname();"><br><br>
+            <label for="email">email</label>
+            <input type="text" id="email"><br><br>
+
+            <button onclick="submitForm();">submit</button>
+
+            <p id="para1">welcom</p>
+
+        </form>
+    </div>
+</body>
+<script>
+    function submitForm() {
+        var firstname = Array.from(document.getElementById("fname").value);
+        var lastname = Array.from(document.getElementById("lname").value);
+        var email = Array.from(document.getElementById("email").value);
+
+        for (var i = 0; i < firstname.lenght; i++) {
+            if (firstname[i] === '6' || firstname[i] === '7' || firstname[i] === '8') {
+                document.getElementById("fname").value = "";
+                alert("this charecter is not allowed " + firstname[i]);
+                break;
+            }
+        }
+
+        for (var i = 0; i < lastname.lenght; i++) {
+            if (lastname[i] === '%' || lastname[i] === '/' || lastname[i] === '*') {
+                document.getElementById("lname").value = "";
+                alert("this charecter is not allowed " + lastname[i]);
+                break;
+            }
+        }
+        for (var i = 0; i < email.lenght; i++) {
+            if (email[i] === '%' || email[i] === '_' || email[i] === '-') {
+                document.getElementById("fname").value = "";
+                alert("this charecter is not allowed " + email[i]);
+                break;
+            }
+        }
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            padding: 50px;
+            width: 250px;
+            
+        }
+        input{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+    <label for="">First name</label><br>
+    <input type= "text" name="" id="fname"><br>
+    <label for="">Middel name</label><br>
+    <input type="text" name="" id="mname"><br>
+    <label for="">last name</label><br>
+    <input type="text" name="" id="lname"  onchange="addText(),addText1();" ><br>
+    <label for="full name">full name</label><br>
+    <input type= "text" id="fullname" >
+   
+    <p id="paraText">welcom enter your name</p>
+</form>
+</div>
+</body>
+<script>
+    function addText(){
+        var firstname = document.getElementById("fname").value
+    var middelname = document.getElementById("mname").value
+    var lastname = document.getElementById("lname").value
+
+    document.getElementById("paraText").innerText="wlcome:" +firstname +" "+middelname+" "+lastname;
+
+    }
+    function addText1(){
+        var firstname = document.getElementById("fname").value
+    var middelname = document.getElementById("mname").value
+    var lastname = document.getElementById("lname").value
+
+    document.getElementById("fullname").value= firstname +" "+middelname+" "+lastname;
+
+    }
+    
+</script>
+</html>

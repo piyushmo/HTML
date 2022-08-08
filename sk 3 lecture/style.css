@@ -1,0 +1,25 @@
+/* External CSS */
+
+div{
+    text-align: center;
+    color: rgb(29, 10, 10);
+    background-color: rgb(85, 186, 85);
+    border: 5px solid rgb(118, 22, 22);
+    padding: 100px;
+  
+ }
+ p
+ {
+    font-size: 30px;
+ }
+
+ button{
+    color: white;
+    background-color: rgb(57, 57, 145);
+    font-size: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+ }
+
+ 
