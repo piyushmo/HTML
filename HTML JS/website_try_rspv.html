@@ -1,29 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Food Website</title>
     <style>
-        #list-nav >li{
-            list-style-type: none;
-            flex-direction: row;
-            display:inline;
-            text-align: right;
+        .c2 {
+
+            font-family: 'Courier New', Courier, monospace;
+            /* margin: 0px auto 0px 0px; */
+            color: black;
+            background-color: aliceblue;
+            padding: 8px 16px;
+            
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            background-color: aquamarine;
+            
+            
+
+        }
+        .c3{
+            
+            justify-content: space-between;
+            display: inline;
+            
+            float: right;
+            width: 100%;
+            height: 20px;
+            text-align:right;
+            float: right;
+           
+    }
+
+
+
+
+        .himg {
+            width: 100%;
+        }
+
+        .img {
+            width: 100%;
+        }
+
+        .text-color {
+            color: gray;
+        }
+
+        .Menu {
+            display: flex;
+
         }
     </style>
-
-
-
 </head>
+
 <body>
-    <ul id="list-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <!-- Navbar -->
+    <div class="container">
+        <div class="c2">
+            <a href="">food discreption</a>
+        
+
+        <div class="c3">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+            <a href="">Menu</a>
+        </div>
+    </div>
+    </div>
+    <!-- head image content -->
+    <header class="header1" id="ha1">
+        <div>
+            <div class="img">
+                <img class="himg" src="/Lecture wise demo/images/flowers-276014__340.jpg" alt="">
+            </div>
+            <div class="hd">
+                <h1>demo food images</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- information div -->
+    <div>
+        <div>
+            <img src="/Lecture wise demo/images/flowers-276014__340.jpg" alt="">
+        </div>
+        <div>
+            <h1>about food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto atque reprehenderit laborum doloribus
+                possimus et, ea totam consectetur porro?</p>
+            <p class="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem ipsa tempora
+                sunt quis aperiam
+                quae illo incidunt earum asperiores!</p>
+        </div>
+    </div>
+
+    <!-- information for Menu -->
+    <div class="Menu">
+        <div>
+            <h1>Menu</h1><br>
+            <h4>vada pav</h6>
+                <p style="color:gray ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, fugiat.</p>
+                <br>
+
+                <h4>pavbhaji</h4>
+                <p style="color:gray ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, expedita.
+                </p><br>
+
+                <h4>paneer masala</h4>
+                <p style="color:gray ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem?</p><br>
+
+                <h4>chicken tikka</h4>
+                <p style="color:gray ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, maiores!</p>
+                <br>
+
+        </div>
+
+        <div>
+            <img src="/Lecture wise demo/images/flowers-276014__340.jpg" alt="">
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- contact section -->
+    <div>
+        <h1>Contact</h1>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the
+            food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+
+        <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message
+            here:</p>
+
+        <form action="#">
+            <label for="">Enter Your Name:</label>
+            <input placeholder="Name" type="text"><br><br>
+            <label for="">How many people:</label>
+            <input placeholder="How many people" type="number" required name="people"><br>
+            <label for="">Date:</label>
+            <input name="" id="" type="datetime-local" required name="" value=""><br>
+            <input type="message" name="" id="" placeholder="Message box"><br>
+            <button style="border:none ; background-color: lightskyblue;">SEND MESSAGE</button>
+
+
+        </form>
+    </div>
+
 </body>
+
 </html>

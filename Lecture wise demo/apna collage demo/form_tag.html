@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form page</title>
+</head>
+<body>
+    <form action="">
+         <h1>Pyment Form</h1>
+         <p>Contact Information</p>
+         <label for="">Name:*</label>
+         <input type="text" name="name" id="name" placeholder="Enter Name" required>
+         <fieldset>
+            <legend>Gender</legend>
+           <p>
+              <label for="gender">gender:*</label>
+              Male<input type="radio" name="gender" id="male" required>  Female<input type="radio" name="gender" id="female" required>
+           </p>
+        </fieldset>
+       <p> address:<textarea name="address" id="address" cols="100" rows="8"></textarea> </p>
+       <p>Email:* <input type="email" name="email" id="email" required></p>
+       <p>Pincode:* <input type="pincode" name="pincode" id="pincode" required></p>
+
+       <h1>Pyment Card Information</h1>
+       <p>card type:*</p>
+       <select name="card_type" id="card_type" required>
+           <option value="">--Select Card--</option>
+           <option value="visa">Visa</option>
+           <option value="rupay">Rupay</option>
+           <option value="mastercard">Mastercard</option>
+       </select>
+       <p>Card Number:*
+       <input type="number" name="number" id="number" required></p>
+
+       <p>Expiration Date:*
+        <input type="date" name="exp_date" id="exp_date" required>
+       </p>
+
+       <p>CVV:*
+        <input type="password" name="cvv" id="cvv" required></p>
+
+        <p><input type="submit" value="Pay Now"></p>
+
+    </form>
+
+</body>
+</html>

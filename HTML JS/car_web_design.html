@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Car</title>
+    <link rel="icon" href="/images/car logo.jpg">
+    <style>
+        body {
+            padding: 2px;
+            margin: 2px;
+            box-sizing: content-box;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+
+        .container {
+            background-color: rgb(236, 244, 241);
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .container .logo {
+            padding: 10px;
+            float: left;
+
+        }
+
+        .container.menu {
+            display: flex;
+            float: right;
+        }
+
+        .menu ul li {
+            display: flex;
+            display: inline;
+
+        }
+
+        .menu ul li {
+            padding: 0px;
+            margin-right: 80px;
+            /* display: flexbox; */
+
+        }
+
+        .div menu ul li {
+            display: flex;
+            float: right;
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 30px;
+
+        }
+
+        .menu ul li a:hover {
+            color: rgb(247, 119, 119);
+            background-color: rgb(205, 247, 139);
+            padding: 15px;
+            transition: .7s;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+
+        }
+
+        .bgi1 {
+            background-image: url("../images/talia-BHlpqQMWDSc-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%; */
+            height: 500px;
+            margin-top: 10px;
+            opacity: 0.9;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #search {
+            text-align: center;
+
+        }
+
+        input {
+            width: 600px;
+            height: 30px;
+            position: relative;
+            top: 50%;
+            left: 30%;
+            border: none;
+
+        }
+
+        .fa-solid {
+            color: gray;
+            position: absolute;
+            margin-top: 224px;
+            margin-left: 467px;
+        }
+
+        .flex-container {
+            display: flex;
+            border: 1px;
+            height: 500px;
+        }
+
+        .flex-container>div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            width: 50%;
+            font-size: 30px;
+            text-align: left;
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .flex-container2 {
+            display: flex;
+            border: 1px;
+            height: 500px;
+        }
+
+        .flex-container2>div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            width: 50%;
+            font-size: 30px;
+            text-align: left;
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .flex-container3 {
+            display: flex;
+            border: 1px;
+            height: 500px;
+        }
+
+        .flex-container3>div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            width: 50%;
+            font-size: 30px;
+            text-align: left;
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .flex-container4 {
+            display: flex;
+            border: 1px;
+            height: 500px;
+        }
+
+        .flex-container4>div {
+            background-color: white;
+
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            width: 50%;
+            font-size: 30px;
+            text-align: left;
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* .flex-container .img_bmw:hover {
+            transform: scale(-1);
+        } */
+
+        /* (Responsive another Section) */
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #dream_car::first-letter {
+            color: red;
+            font-size: 40px;
+
+        }
+
+        #dream_car p::first-line {
+            color: blue;
+        }
+
+        /* (--Overlay--MGH--) */
+        .mgh {
+            display: flex;
+            width: 20px;
+            height: auto;
+        }
+
+        .responsive:hover .gallery .overlay {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 122px;
+            left: 0;
+            right: 0;
+            background-color: white;
+            overflow: hidden;
+            width: 364px;
+            height: 242px;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: .6s ease;
+            transition: .6s ease;
+        }
+
+        .gallery {
+            position: relative;
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- (Navigation bar) -->
+
+<body>
+    <div class="container">
+        <div class="logo">Design for Dreams Car</div>
+        <div class="menu">
+            <ul>
+                <li> <a href="">Home<i class="w3-margin-left fa fa-home"></i></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Service</a></li>
+                <li> <a href="">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- (Image input text) -->
+    <div class="bgi1">
+        <input type="text" name="" id="search" placeholder="Search">
+
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <!-- (BMW car div) -->
+    <div class="flex-container">
+        <div style="font-size: 18px;">
+
+            <h4><mark>BMW Car 8 Series</mark></h4>
+            <p><b>Rs.1.62 - 2.23 Cr*Get On Road Price</b></p>
+
+            <fieldset style="font-size:14px ;">
+                <legend style="color: gray;">Key Specification</legend>
+                <p>Mileage (upto)-11.3 kmpl</p>
+                <p>Engine (upto)-4395 cc</p>
+                <p>BHP-600.0</p>
+                <p>Transmission-Automatic</p>
+                <p>Seats-4</p>
+                <p>Boot Space-440</p>
+            </fieldset>
+            <p> <mark>Bayerische Motoren Werke</mark> AG, commonly referred to as BMW , is a German multinational
+                manufacturer of
+                luxury vehicles and motorcycles headquartered in Munich, Bavaria, Germany.
+                The corporation was founded
+                in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from
+                1933 to 1945.</p>
+        </div>
+        <div class="img_bmw">
+            <a href="https://www.bmw.in/en/all-models.html" target="_blank">
+                <img src="/images/BMW.jpg" alt="" width="759px" height="452px"
+                    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </a>
+        </div>
+    </div>
+    <!-- (Audi car div) -->
+    <div class="flex-container2">
+        <div class="img_audi">
+            <a href="https://www.audi.com/en.html" target="_blank">
+                <img src="/images/Audi.jpg" alt="" width="694px" height="445px"
+                    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </a>
+        </div>
+
+        <div style="font-size: 16px;">
+            <h4><mark>Audi CARS</mark></h4>
+            <p><b>Audi RS7</b></p>
+            <p><b>Rs.2.24 Cr*Get On Road Price</b></p>
+            <fieldset style="font-size:14px ;">
+                <legend style="color: gray;">Key Specs of Audi RS7</legend>
+                <p>Mileage (upto)-8.9 kmpl</p>
+                <p>Engine (upto)-3996 cc</p>
+                <p>BHP-591.0</p>
+                <p>Transmission-Automatic</p>
+                <p>Seats-4</p>
+                <p> Boot Space-535</p>
+            </fieldset>
+            <p> The company name is based on the Latin translation of the surname of the founder, August Horch. Horch,
+                meaning "listen" in German, becomes audi in Latin. The four rings of the Audi logo each represent one of
+                four car companies that banded together to create Audi's predecessor company, Auto Union. </p>
+        </div>
+    </div>
+
+    <!-- (Range Rover) -->
+    <div class="flex-container3">
+        <div style="font-size:20px ;">
+            <h4><mark>Range Rover CARS</mark></h4>
+            <p><b>Rs.2.39 - 4.17 Cr*Get On Road Price</b></p>
+            <fieldset style="font-size:15px ;">
+                <legend style="color:gray ;">Key Specification</legend>
+                <p>Mileage (upto)-14.01 kmpl</p>
+                <p>Engine (upto)-4395 cc</p>
+                <p>BHP-345.98</p>
+                <p>Transmission-Automatic</p>
+                <p>Seats-7</p>
+            </fieldset>
+            <p> The Land Rover Range Rover (generally known simply as the Range Rover) is a 4x4 motor car produced by
+                Land Rover, a marque and sub-brand of Jaguar Land Rover. The Range Rover line was launched in 1970 by
+                British Leyland and is now in its fifth generation.</p>
+
+        </div>
+        <div class="img_RR">
+            <a href="https://www.landrover.com/families/range-rover.html" target="_blank">
+                <img src="/images/range-rover-evoque-front-720x405px.jpg" alt="" width="759px" height="452px"
+                    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </a>
+        </div>
+    </div>
+    <!-- (Mercedes car) -->
+    <div class="flex-container4">
+        <div class="img_mrcds">
+            <a href="https://www.mercedes-benz.co.in" target="_blank">
+                <img src="/images/mercedes.jpg" alt="" width="694px" height="445px"
+                    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </a>
+        </div>
+
+        <div style="font-size: 20px;">
+            <h4><mark>Mercedes-Benz CARS</mark></h4>
+            <p>Mercedes-Benz AMG GLE 63 S</p>
+            <p><b>Rs.2.71 Cr *Get On Road Price</b></p>
+            <fieldset style="font-size: 17px;">
+                <legend style="color: gray;">Key Specs of Mercedes-Benz AMG GLE 63</legend>
+                <p>Mileage (upto)-8.26 kmpl</p>
+                <p>Engine (upto)-3982 cc</p>
+                <p>BHP-603.46</p>
+                <p>Transmission-Automatic</p>
+                <p>Seats-5</p>
+                <p>Airbags-yes</p>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- (-------another Section--------) -->
+    <h2>Responsive Image Gallery</h2>
+
+    <p><i>Resize the browser window to see the effect.</i></p>
+    <h1>The Best Budget Segment Cars</h1>
+
+    <!-- (----Tata punch car-----) -->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://cars.tatamotors.com/suv/punch">
+                <img src="/images/Tata-Punch-Price-1200x810.jpg" alt="" width="600" height="400">
+            
+                <!-- (----Overlay propertie----) -->
+                <div class="overlay">
+                    <img src="/images/tata punch 02.jpg" class="mghimg">
+                </div>
+            
+            </a>
+            <div class="desc">Tata Punch
+                <p>Rs.5.93 - 9.49 Lakh* <i>Get On Road Price</i></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- (------Nissan Magnet------) -->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank"
+                href="https://www.nissan.in/vehicles/new/magnite-red-edition.html?utm_source=Google&cid=PSM_FY22-FY23-AUG-NISSAN-MAGNITE-AUG-MUL-NA-RTL-NA-AMI-IND-NA-LG-NA-NA-NISSAN-NA-NA-NA-NA-NA-Est-0481_NMIPL_Consideration_Google_HP-LS-Brand-ModelLowIntent-UAG-EM2_RSA&gclid=EAIaIQobChMIqOOz0I_H-QIVI4ZLBR3UjwnWEAAYASAAEgKOafD_BwE">
+                <img src="/images/Nissan Magnet.jpg" alt="Northern Lights" width="600" height="400">
+            
+            
+                <!-- (----Overlay propertie----) -->
+            <div class="overlay">
+                <img src="/images/nissan magnite 2.jpg" class="mghimg">
+            </div>
+            
+            
+            </a>
+            <div class="desc">Nissan Magnite
+                <p>Rs.5.97 - 10.79 Lakh* <i>Get On Road Price</i></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- (------Tata harrier-----) -->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://cars.tatamotors.com/suv/harrier">
+                <img src="/images/Tata-Harrier.jpg" alt="Forest" width="600" height="400">
+            
+                <!-- (----Overlay propertie----) -->
+            <div class="overlay">
+                <img src="/images/tata harrier 2.jpg" class="mghimg">
+            </div>
+            
+            </a>
+            
+            <div class="desc">TATA Harrier
+                <p>Rs.14.70 - 21.90 Lakh* <i>Get On Road Price</i></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- (------MG Hector------) -->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.mgmotor.co.in/vehicles/mghector">
+                <img src="/images/MG-Hector-black-front.jpg" alt="Mountains" width="600" height="400">
+
+                <!-- (----Overlay propertie----) -->
+                <div class="overlay">
+                    <img src="/images/mg hrctor 2.jpg" class="mghimg">
+                </div>
+            </a>
+
+            <div class="desc">MG-Hector
+                <p>Rs.14.15 - 20.11 Lakh* <i> Get On Road Price</i></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- (----Paragraph About Car-----) -->
+    <div class="clearfix"></div>
+
+    <div id="dream_car" style="padding:6px;">
+        <p>Dream Car</p>
+        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Cars are important
+            parts of our lives. Everyone wants to ride in a car, <mark>"Buying a car is everyone’s dream."</mark>
+            Buying a car is seen as an achievement these days. Cars aren’t just your car, for many car-owners, their
+            cars are like their children. They give them more attention and take special care of their cars. One of the
+            most significant benefits of traveling by car is flexibility. You can stop wherever you want, take any
+            street, any shortcut that suits your commute hours. Another benefit of traveling by car is getting to enjoy
+            fantastic views. While you travel via public transport, you are always overwhelmed by the crowd and the
+            hustle and bustle they bring with them. Owning a car has become very common these days, Some people even
+            have more than one car. But, for some, it is still like a dream. Some dream of buying a simple car and some
+            are willing to own a supercar.</p>
+        <span style="color: rgb(211, 177, 8);">“Happiness is the vehicle we travel in, not our destination.”</span>
+    </div>
+</body>
+
+</html>

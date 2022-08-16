@@ -1,0 +1,43 @@
+body{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.container
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: aqua;
+width: 100%;
+}
+.container .logo{
+float: left;
+padding: 10px;
+}
+.menu ul
+{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    margin-right: 10px;
+    padding: 0px;
+    display: flexbox;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+    
+}
+.menu ul li:hover{
+    background-color: rgb(140, 140, 244);
+    color: white;
+    display: block;
+}
+.logo{
+    font-size: 20px;
+}
